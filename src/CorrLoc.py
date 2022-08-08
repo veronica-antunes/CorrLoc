@@ -568,8 +568,8 @@ def envvalue(wavs_file, outfile=None, point=None, indv_norm=False,
 			####### For normalization #################################################
 			if indv_norm == True :
 				#B=np.load(vel_fileB[v])		# array with step3 results: dt without
-
-				print ('Normalizing amplitude values for pair', p , '...')
+				if verbose:
+					print ('Normalizing amplitude values for pair', p , '...')
 
 				max_value=np.amax(B[ :, :, :, p])
 
