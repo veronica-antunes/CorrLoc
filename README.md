@@ -40,7 +40,7 @@ To apply to real data just open the file and change the input parameters accordi
 grid(sta_file, x_start, x_end, y_start, y_end, step, outfile=None, fontsize=12, 
      verbose=True, path='')
 ```
-Performs the first step: GRID
+First step: Creates the GRID and station coordinates
 * sta_file - station file, with coordinates of the stations and the reference point for the (0,0) coordinate. Needs to be in the same format as loc_example/stations_file.txt
 * x_start, x_end - start and end of the grid in the x direction, in meters
 * y_start, y_end - start and end of the grid in the y direction, in meters
@@ -54,7 +54,7 @@ Performs the first step: GRID
 ```
 crosscorr(wavs_file, delta_time_w, verbose=True, path=None)
 ```
-Performs the second step: Computes the cross-correlation envelope between station pairs for every time window defined (sliding window effect).
+Second step: Computes the cross-correlation envelope between station pairs for every time window defined (sliding window effect).
 * wavs_file - waveform file (or path)
 * delta_time_w - time segment window, in seconds
 * verbose - if True it will print messages to indicate the stage of the calculations. Default is True.
@@ -64,7 +64,7 @@ Performs the second step: Computes the cross-correlation envelope between statio
 ```
 difftime(vel1, vel2, step, verbose=True, path=None)
 ```
-Performs the third step: Computes the diferential time for a list of velocities. It will calculate for all velocity values between vel1 and vel2 whithin the step defined. Allows testing different velocities in case the velocity is not known.
+Third step: Computes the diferential time for a list of velocities. It will calculate for all velocity values between vel1 and vel2 whithin the step defined. Allows testing different velocities in case the velocity is not known.
 * vel1, vel2 - first (inclusive) and last (exclusive) velocity values for differential time calculations.
 * step - step in velocity for differential time calculations.
 * verbose - if True it will print messages to indicate the stage of the calculations. Default is True.
@@ -74,7 +74,7 @@ Performs the third step: Computes the diferential time for a list of velocities.
 ```
 envvalue(wavs_file, outfile=None, point=None, indv_norm=False, verbose=True, path=None)
 ```
-Performs the fourth step: Calculates the envelope value for every point of the grid, according to the respective diferential time.
+Fourth step: Calculates the envelope value for every point of the grid, according to the respective diferential time.
 * wavs_file - waveform file (or path)
 * outfile - name of the outputfile in case we want to plot a specific point
 * point - [int(i),int(j),int(p),int(w)], the given point to plot the CC envelope
@@ -89,7 +89,7 @@ Performs the fourth step: Calculates the envelope value for every point of the g
 ```
 stackall(final_norm=True, verbose=True, path=None)
 ```
-Performs the fifth step: Stacks all the individual back-projections into a final location solution.
+Fifth step: Stacks all the individual back-projections into a final location solution.
 * final_norm - if True, normalizes the final solution, for a normalized resulting values (from 0-1). Default is True.
 * verbose - if True it will print messages to indicate the stage of the calculations. Default is True.
 * path - if a path is inserted it will generate the files in the path. default is None (it will generate the files in the current directory)
@@ -100,7 +100,7 @@ plotall(name_folder, wavs_file, ntotal_stat=None, tr_norm=False, source_loc_file
         source_loc = None, out_format='.png', map_units = None, norm_tw=False, threshold=0.75, 
         show_loc_pos = True, final_loc_file='final_locations.list', verbose=True, path=None)
   ```
-Performs the sixth and last step: 	Plots the final likely location solution in a map and the waveforms.
+Sixth and last step: 	Plots the final likely location solution in a map and the waveforms.
 
 * name folder - saves the figures in a certain location with a specific name
 * wavs_file - waveform file (or path)
