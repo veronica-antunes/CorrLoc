@@ -125,7 +125,7 @@ Togeher with the functions to compute the locatation, there is also a set of fun
 Verónica Antunes, Thomas Planès, Anne Obermann, Francesco Panzera, Sebastiano D'Amico, Adriano Mazzini, Alessandra Sciarra, Tullio Ricci, Matteo Lupi (2022); Insights into the dynamics of the Nirano Mud Volcano through seismic characterization of drumbeat signals and V/H analysis,
 Journal of Volcanology and Geothermal Research, 107619, ISSN 0377-0273, DOI: https://doi.org/10.1016/j.jvolgeores.2022.107619. (https://www.sciencedirect.com/science/article/pii/S0377027322001500)
 
-**Bibtex:**
+**Or Bibtex citation:**
 ```
 @article{Antunes2022,
 title = {Insights into the dynamics of the Nirano Mud Volcano through seismic characterization of drumbeat signals and V/H analysis},
