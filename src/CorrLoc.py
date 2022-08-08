@@ -8,7 +8,7 @@ import os
 
 ###########################################################################################
 # Veronica Antunes 03/07/2017                                                             #
-# Last update 09/2021                                                                     #
+# Last update 08/2022                                                                     #
 # veronica.antunes@sed.ethz.ch                                                            #
 # Aim: Automatically locate signals using a sliding window                                #
 ###########################################################################################
