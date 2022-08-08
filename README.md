@@ -117,7 +117,7 @@ Sixth and last step: 	Plots the final likely location solution in a map and the 
 * verbose - if True it will print messages to indicate the stage of the calculations. Default is True.
 * path - if a path is inserted it will generate the files in the path. default is None (it will generate the files in the current directory)
 
-Togeher with the functions to compute the locatation, there is also a set of functions to test each step. Each function is explained in detail in the  src/test_steps.py file. It is also provided an example of these functions in the example exercise.
+Together with the functions to compute the locatation, there is also a set of functions to test each step. Each function is explained in detail in the  src/test_steps.py file. It is also provided an example of these functions in the example exercise.
 
 
 **If you use this code please cite as:**
