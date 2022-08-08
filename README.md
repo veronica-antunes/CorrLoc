@@ -37,7 +37,8 @@ To apply to real data just open the file and change the input parameters accordi
 **Functions:**
 
 ```
-grid(sta_file, x_start, x_end, y_start, y_end, step, outfile=None, fontsize=12, verbose=True, path='')
+grid(sta_file, x_start, x_end, y_start, y_end, step, outfile=None, fontsize=12, 
+     verbose=True, path='')
 ```
 Performs the first step: GRID
 * sta_file - station file, with coordinates of the stations and the reference point for the (0,0) coordinate. Needs to be in the same format as loc_example/stations_file.txt
