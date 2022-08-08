@@ -7,7 +7,7 @@
 * scipy version 1.6.1
 * matplotlib version 3.2.2
 
-CorrLoc code was developed to locate weal emergent signals by using the waveform amplitudes instead of picks. The code backprojects the envelope of the cross-correlation function between station pairs to give a likelywood solution. CorrLoc runs automatically through the continuous data and provides a location solution for each window segment.
+CorrLoc code was developed to locate weal emergent signals by using the waveform amplitudes instead of picks. The code backprojects the envelope of the cross-correlation function between station pairs to give a likelyhood location solution. CorrLoc runs automatically through the continuous data and provides a location for each window segment.
 
 **Installattion:**
 
