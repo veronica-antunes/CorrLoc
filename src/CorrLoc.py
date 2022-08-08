@@ -133,7 +133,8 @@ def grid(sta_file, x_start, x_end, y_start, y_end, step,
 	plt.yticks(fontsize=fontsize)
 
 	if outfile:
-		print ('plotting grid map...')
+		if verbose:
+			print ('plotting grid map...')
 		plt.savefig(outfile, bbox_inches='tight' )
 	#else :
 	#	plt.savefig('grid.png', bbox_inches='tight' )
