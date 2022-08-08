@@ -16,7 +16,7 @@ Install the package requirements. The code was tested with the versions provided
 
 **Usage:**
 
-Import the different functions present in the scr/ folder and use them as described below. The code runs in 6 steps. Each step can be run independently for more flexibility. Each step is detailed explained in the publication ([link](https://www.sciencedirect.com/science/article/pii/S0377027322001500)).
+Import the different functions present in the scr/ folder and use them as described below. The code runs in 6 steps. Each step can be run independently for more flexibility. Each step is detailed explained in the publication ([link](https://www.sciencedirect.com/science/article/pii/S0377027322001500), see below).
 
 ```
 import src.CorrLoc as CorrLoc
