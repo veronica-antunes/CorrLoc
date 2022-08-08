@@ -701,13 +701,13 @@ def stackall(final_norm=True, verbose=True, path=None) :
 	if verbose:
 		print ('Step 5 Done!')
 
-def plotall(name_folder, wavs_file, ntotal_stat=None, tr_norm=False, source_loc_file = True,
+def plotall(name_folder, wavs_file, ntotal_stat=None, tr_norm=False, source_loc_file = None,
 	source_loc = None, out_format='.png', map_units = None, verbose=True, norm_tw=False, threshold=0.75,
 	show_loc_pos = True, final_loc_file='final_locations.list', path=None) :
 	'''
 	Plots the final solution.
 	Exmaple:
-	plotall(name_folder, wavs_file, ntotal_stat=None, tr_norm=False, source_loc_file = True,
+	plotall(name_folder, wavs_file, ntotal_stat=None, tr_norm=False, source_loc_file = None,
 		source_loc = None, out_format='.png', map_units = None, verbose=True, norm_tw=False,
 		path=None) 
 
