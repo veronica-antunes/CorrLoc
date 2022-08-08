@@ -970,8 +970,13 @@ def plotall(name_folder, wavs_file, ntotal_stat=None, tr_norm=False, source_loc_
 
 				asd = np.linspace(0, stat.size/samp_rate, stat.size )
 
-				ax1.plot_date(t, stat, '-' ,linewidth=0.15, color=colours[s])
-				ax2.plot(asd, stat, linewidth=0.3, color=colours[s])
+				try:
+					color=colours[s]
+				except:
+					color='grey'
+
+				ax1.plot_date(t, stat, '-' ,linewidth=0.15, color=color)
+				ax2.plot(asd, stat, linewidth=0.3, color=color)
 				#ax2.plot(stat[tw:tw+dt], linewidth=0.3, color=colours[s])
 
 				#date_tw=np.linspace(start,end,gw+1)[w]
@@ -1106,8 +1111,12 @@ def plotall(name_folder, wavs_file, ntotal_stat=None, tr_norm=False, source_loc_
 			for each_stat in stat_net :
 				loc=np.where(stat_list == each_stat)[0][0]
 				#loc=[pos for pos, char in enumerate(stat_list) if char == each_stat][0]
+				try :
+					color = colours[c2]
+				except:
+					color = 'grey'
 				ax3.scatter(float(x_stat[loc]), float(y_stat[loc]),
-					color=colours[c2], marker='v',
+					color=color, marker='v',
 					edgecolor='white', linewidth=0.6, s=60) #, s=80) 
 				c2=c2+1
 
