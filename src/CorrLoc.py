@@ -1154,10 +1154,12 @@ def plotall(name_folder, wavs_file, ntotal_stat=None, tr_norm=False, source_loc_
 
 					f = open(final_loc_file, 'a')
 					reflat,reflon=np.load('ref_coord.npy')
-					lat,lon=convert2coord(reflat,reflon,xpos,ypos)
+					#lat,lon=convert2coord(reflat,reflon,xpos,ypos)
 					date1=t0+(w*dtw)
 					date2=t0+((w+1)*dtw)
-					f.write(str(date1)+' '+str(date2)+' '+str(xpos)+' '+str(ypos) +'\n')#+
+					f.write(str(date1)+' '+str(date2-date1) +' '+str(xpos)+' '+str(ypos) +
+						' ' + str(reflat) +' '+ str(reflon) + ' ' + 
+						result_path+'_w_'+str( "%04d" % w)+'_'+ str(int(vel)))
 						#' in m, contunue working on line 1147 to convert to lat, lon\n')
 					f.close()
 
