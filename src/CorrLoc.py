@@ -362,8 +362,12 @@ def difftime(vel1, vel2, step, verbose=True, path=None) :
 				print ('getting dt for station pair', p, '... ', s1, s2)
 
 			#find the raw and column corresponding to certain station
-			s1n=np.where(stat_list==s1)[0][0]
-			s2n=np.where(stat_list==s2)[0][0]
+			try :
+				s1n=np.where(stat_list==s1)[0][0]
+				s2n=np.where(stat_list==s2)[0][0]
+			except:
+				raise ValueError('No coordinates for station '+s1 +' or ' + s2 +
+					': \nCheck station file!   OR   Add trace to the waveforms!')
 
 			#station pair coordinates
 			st1, x1, y1=stat_list[s1n]
