@@ -1187,7 +1187,7 @@ def plotall(name_folder, wavs_file, ntotal_stat=None, tr_norm=False, source_loc_
 			colorticks=np.linspace(0,vmax,6)
 
 			cbar=plt.colorbar(orientation='horizontal', ticks=colorticks) #, shrink=0.7)
-			cbar.ax.set_xlabel('Source likelihood')
+			cbar.ax.set_xlabel('Location probability')
 				#'stacked back-projections \n normalized')
 				#rotation=180)
 				
