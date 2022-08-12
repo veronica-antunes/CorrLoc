@@ -1,5 +1,8 @@
 # CorrLoc
 
+Antunes et al., (2022); Insights into the dynamics of the Nirano Mud Volcano through seismic characterization of drumbeat signals and V/H analysis,
+Journal of Volcanology and Geothermal Research, 107619, ISSN 0377-0273, DOI: https://doi.org/10.1016/j.jvolgeores.2022.107619.
+
 **Requirements:**
 * Python3
 * numpy version 1.19.5
