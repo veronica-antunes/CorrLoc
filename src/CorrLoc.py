@@ -191,7 +191,7 @@ def crosscorr(wavs_file, delta_time_w, verbose=True, path=None) :
 	check=range(0,nt,dt)[-1]+dt
 	if check > nt :
 		nt=range(0,nt,dt)[-1]
-		print ('trace is '+str(check - nt)+' npts too long... resizing to '+ str(nt)+ ' npts')
+		#print ('trace is '+str(check - nt)+' npts too long... resizing to '+ str(nt)+ ' npts')
 
 	n_stat=int(nstat) 		#number of stations
 	#max_dt=int((dt/2)+1)		# max shift in samples (for obspy cross-correlation)
@@ -969,7 +969,7 @@ def plotall(name_folder, wavs_file, ntotal_stat=None, tr_norm=False, source_loc_
 				if t.size == stat.size:
 					t=t
 				else:
-					print ('changing t size ')
+					#print ('changing t size ')
 					t = np.linspace(start, end, stat.size)
 
 				asd = np.linspace(0, stat.size/samp_rate, stat.size )

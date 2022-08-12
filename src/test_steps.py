@@ -382,6 +382,8 @@ def plot_envvalue(arrayA='A_array_0380.npy', arrayB='B_array_0380.npy',
 	#ax.set_ylim([0-50, 800+50])
 	#colours2=['w','w','w','w','w','w', 'w', 'w', 'w', 'w','w','w','white','w']
 
+	plt.close('all')
+	
 	#corner=1
 	if pairs == 'all':
 		pairs_range= range(len(pair_list))
