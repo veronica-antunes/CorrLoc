@@ -10,11 +10,11 @@ Journal of Volcanology and Geothermal Research, 107619, ISSN 0377-0273, DOI: htt
 * scipy version 1.6.1
 * matplotlib version 3.2.2
 
-CorrLoc code was developed to locate weal emergent signals by using the waveform amplitudes instead of picks. The code backprojects the envelope of the cross-correlation function between station pairs to give a likelyhood location solution. CorrLoc runs automatically through the continuous data and provides a location for each window segment.
+CorrLoc code was developed to locate weal emergent signals by using the waveform amplitudes instead of picks. The code backprojects the envelope of the cross-correlation function between station pairs to give a likelihood location solution. CorrLoc runs automatically through the continuous data and provides a location probability map for each window segment.
 
 **Installattion:**
 
-Install the package requirements. The code was tested with the versions provided above. If you face some package imcompatibilities, try to create a python environment and install the specific versions: https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
+Install the package requirements. The code was tested with the versions provided above. If you face some package imcompatibilities, create a python environment and install the specific versions: https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
 
 
 **Usage:**
@@ -34,7 +34,7 @@ run_CorrLoc.py file exemplifies how to use the different functions and steps to 
 python3 run_CorrLoc.py
 ```
 
-To apply to real data just open the file and change the input parameters accordingly. The time window, filter and velocities need to be tested and adapted for better solution result.
+To apply to real data just open the file and change the input parameters accordingly. The time window, filter and velocities might need to be tested and adapted for better solution result.
 
 
 **Functions:**
