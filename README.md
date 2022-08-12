@@ -79,7 +79,7 @@ envvalue(wavs_file, outfile=None, point=None, indv_norm=False, verbose=True, pat
 ```
 Fourth step: Calculates the envelope value for every point of the grid, according to the respective diferential time.
 * wavs_file - waveform file (or path)
-* outfile - name of the outputfile in case we want to plot a specific point
+* outfile - name of the outputfile in case we want to plot the cross correlation function and maxima for a specific point of the gric
 * point - [int(i),int(j),int(p),int(w)], the given point to plot the CC envelope
 			i,j is the grid point
 			p is the station pair 
