@@ -51,7 +51,7 @@ First step: Creates the GRID and station coordinates
 * outfile - if a name is provided it will generate a map with the grid and the stations 
 * fontsize - fontsize for plot lables, default is 12
 * verbose - if True it will print messages to indicate the stage of the calculations. Default is True.
-* path - if a path is inserted it will generate the files in the path. default is None (it will generate the files in the current directory)
+* path - if a path is inserted it will generate the files in the path. default is None (the files are generated in the current directory)
 
 
 ```
@@ -61,7 +61,7 @@ Second step: Computes the cross-correlation envelope between station pairs for e
 * wavs_file - waveform file (or path)
 * delta_time_w - time segment window, in seconds
 * verbose - if True it will print messages to indicate the stage of the calculations. Default is True.
-* path - if a path is inserted it will generate the files in the path. default is None (it will generate the files in the current directory)
+* path - if a path is inserted it will generate the files in the path. default is None (the files are generated in the current directory)
 
 
 ```
@@ -71,7 +71,7 @@ Third step: Computes the diferential time for a list of velocities. It will calc
 * vel1, vel2 - first (inclusive) and last (exclusive) velocity values for differential time calculations.
 * step - step in velocity for differential time calculations.
 * verbose - if True it will print messages to indicate the stage of the calculations. Default is True.
-* path - if a path is inserted it will generate the files in the path. default is None (it will generate the files in the current directory)
+* path - if a path is inserted it will generate the files in the path. default is None (the files are generated in the current directory)
 
 
 ```
@@ -86,7 +86,7 @@ Fourth step: Calculates the envelope value for every point of the grid, accordin
 			w is the number of the time window
 * indv_norm - if True, it will normalize each individual backprojections. Use in the case a station pair is dominating the location solution. Default is False.
 * verbose - if True it will print messages to indicate the stage of the calculations. Default is True.
-* path - if a path is inserted it will generate the files in the path. default is None (it will generate the files in the current directory)
+* path - if a path is inserted it will generate the files in the path. default is None (the files are generated in the current directory)
 
 
 ```
@@ -95,7 +95,7 @@ stackall(final_norm=True, verbose=True, path=None)
 Fifth step: Stacks all the individual back-projections into a final location solution.
 * final_norm - if True, normalizes the final solution, for a normalized resulting values (from 0-1). Default is True.
 * verbose - if True it will print messages to indicate the stage of the calculations. Default is True.
-* path - if a path is inserted it will generate the files in the path. default is None (it will generate the files in the current directory)
+* path - if a path is inserted it will generate the files in the path. default is None (the files are generated in the current directory)
 
 
 ```
@@ -118,7 +118,7 @@ Sixth and last step: 	Plots the final likely location solution in a map and the 
 * show_loc_pos - plots the point of the grid with the maximum value (final location). Default True. If False it will not plot the point of the grid with the max amplitude value.
 * loc_file - saves the final grid position and time ranges in a file. The final location is the the point of the grid with the maximum amplitude value. If more than one solution is acheaved, then it will plot all possible solutions.
 * verbose - if True it will print messages to indicate the stage of the calculations. Default is True.
-* path - if a path is inserted it will generate the files in the path. default is None (it will generate the files in the current directory)
+* path - if a path is inserted it will generate the files in the path. default is None (the files are generated in the current directory)
 
 Together with the functions to compute the locatation, there is also a set of functions to test each step. Each function is explained in detail in the  src/test_steps.py file. It is also provided an example of these functions in the example exercise.
 
