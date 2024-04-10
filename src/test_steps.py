@@ -96,7 +96,7 @@ def plot_wavs(wav_name='filtered_wavs.mseed', fig_height=4, fig_width=2.3,
 
 def plot_crosscorr(np_pair='pair.npy', np_xcorr='xcorr_struct.npy', np_env='env_struct.npy',
 	waveform='filtered_wavs.mseed', windows='all' ,pairs='all', equal_scale= True,
-	outpath='test_step2/', format='png', fontsize=12, pick=0, verbose=True) :
+	outpath='2.CrossCorr/', format='png', fontsize=12, pick=0, verbose=True) :
 	'''
 	Plots the cross-correlation function and envelope of the different station pairs 
 	for the different time windows
@@ -218,13 +218,13 @@ def plot_crosscorr(np_pair='pair.npy', np_xcorr='xcorr_struct.npy', np_env='env_
 		if not os.path.exists(outpath):
 			os.makedirs(outpath)
 
-		plt.savefig(outpath+'/W'+str(windows)+'_P'+str(pairs)[1:-1]+'.'+format, bbox_inches='tight' )
+		plt.savefig(outpath+'/W'+str(w)+'_P'+str(pairs)[1:-1]+'.'+format, bbox_inches='tight' )
 		#pdf.savefig('test_step2/'+str(w)+'.pdf', bbox_inches='tight' )
 		plt.close()
 		#plt.show()
 
 def plot_difftime(arrayA='A_array_0380.npy', np_stat='stat_struct.npy', mesh='mesh_struct.npy',
-	np_pair='pair.npy', pairs='all', fontsize=11, outpath='test_step3/', format='png', 
+	np_pair='pair.npy', pairs='all', fontsize=11, outpath='3.DiffTime/', format='png', 
 	verbose=True) :
 	'''
 	plots the velocity from each grid point to each stat pair
@@ -327,10 +327,10 @@ def plot_difftime(arrayA='A_array_0380.npy', np_stat='stat_struct.npy', mesh='me
 		plt.close()
 		#plt.show()
 
-def plot_envvalue(arrayA='A_array_0380.npy', arrayB='B_array_0380.npy',
+def plot_CCpairs(arrayA='A_array_0380.npy', arrayB='B_array_0380.npy',
 	np_stat='stat_struct.npy', np_env='env_struct.npy', mesh='mesh_struct.npy', 
 	np_pair='pair.npy', window=0, fontsize=12, pairs='all', verbose=True, 
-	plot_point='max', outpath='test_step4/',format='png', tw=None) :
+	plot_point='max', outpath='4.CCpairs/',format='png', tw=None) :
 	'''
 	Plots the individual back-projections for each station pair
 	Example:

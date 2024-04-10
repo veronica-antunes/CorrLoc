@@ -68,7 +68,7 @@ CorrLoc.envvalue(filtered_wavs, point=None, indv_norm=False,
 			outfile='/results/test_step4/point_plot.png', 
 			verbose=True, path=inpath)
 			
-test.plot_envvalue(arrayA=inpath+'/A_array_0'+str(vel1)+'.npy', 
+test.plot_CCpairs(arrayA=inpath+'/A_array_0'+str(vel1)+'.npy', 
 	np_stat=inpath+'/stat_struct.npy', 
 	mesh=inpath+'/mesh_struct.npy', np_pair=inpath+'/pair.npy', 
 	arrayB=inpath+'/B_array_0'+str(vel1)+'.npy',
